@@ -21,7 +21,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: MM12300/portfolio-CICD@master
+        with:
+          action: checkout.yml
 
       - name: Setup Node 16.x
         uses: actions/setup-node@v3
