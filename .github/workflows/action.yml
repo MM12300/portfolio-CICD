@@ -27,7 +27,7 @@ jobs:
           action: action.yml
 
       - name: Setup Node 14.x
-        uses: MM12300/portfolio-CICD@main
+        uses: MM12300/portfolio-CICD/setup-node-main@main
         with:
           action: action.yml
           node-version: 14.x
