@@ -24,7 +24,7 @@ jobs:
       - name: Checkout
         uses: MM12300/portfolio-CICD/checkout-main@main
         with:
-          action: checkout.yml
+          action: action.yml
 
       - name: Setup Node 14.x
         uses: MM12300/portfolio-CICD@main
