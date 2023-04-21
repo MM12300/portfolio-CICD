@@ -32,7 +32,7 @@ jobs:
           action: action.yml
           node-version: 14.x
           cache-dependency-path : './package.json'
-          cache: npm
+          cache: npm install
 #
 #      - name: Install dependencies
 #        run: npm ci
