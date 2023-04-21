@@ -25,7 +25,7 @@ jobs:
         uses: MM12300/portfolio-CICD/checkout-main@main
         with:
           action: action.yml
-          repository: MM12300/angular-tour-of-heroes
+          repository: https://github.com/MM12300/angular-tour-of-heroes.git
           ref: 'main'
 
       - name: Setup Node 14.x
