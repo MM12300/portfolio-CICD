@@ -26,12 +26,12 @@ jobs:
         with:
           action: action.yml
 
-#      - name: Setup Node 14.x
-#        uses: MM12300/portfolio-CICD@main
-#        with:
-#          action: setup-node.yml
-#          node-version: 14.x
-#          cache: npm
+      - name: Setup Node 14.x
+        uses: MM12300/portfolio-CICD@main
+        with:
+          action: action.yml
+          node-version: 14.x
+          cache: npm
 #
 #      - name: Install dependencies
 #        run: npm ci
