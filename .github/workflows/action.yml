@@ -31,7 +31,7 @@ jobs:
         with:
           action: action.yml
           node-version: 14.x
-          cache-dependency-path : ''
+          cache-dependency-path : './package-lock.json'
           cache: npm
 #
 #      - name: Install dependencies
