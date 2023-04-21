@@ -48,7 +48,7 @@ jobs:
         id: diff
 
       # If index.js was different than expected, upload the expected version as an artifact
-        uses: MM12300/portfolio-CICD@master
+      - uses: MM12300/portfolio-CICD@master
         if: ${{ failure() && steps.diff.conclusion == 'failure' }}
         with:
           action : upload-artifact.yml
