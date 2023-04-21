@@ -31,6 +31,7 @@ jobs:
         with:
           action: action.yml
           node-version: 14.x
+          cache-dependency-path : MM12300/angular-tour-of-heroes
           cache: npm
 #
 #      - name: Install dependencies
