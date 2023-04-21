@@ -26,10 +26,11 @@ jobs:
         with:
           action: checkout.yml
 
-      - name: Setup Node 16.x
-        uses: actions/setup-node@v3
+      - name: Setup Node 14.x
+        uses: MM12300/portfolio-CICD@master
         with:
-          node-version: 16.x
+          action: setup-node.yml
+          node-version: 14.x
           cache: npm
 
       - name: Install dependencies
