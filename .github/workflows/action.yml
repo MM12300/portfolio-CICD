@@ -22,7 +22,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: MM12300/portfolio-CICD@main
+        uses: MM12300/portfolio-CICD/checkout-main@main
         with:
           action: checkout.yml
 
