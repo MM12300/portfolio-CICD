@@ -26,6 +26,7 @@ jobs:
         with:
           action: action.yml
           repository: MM12300/angular-tour-of-heroes
+          ref: 'main'
 
       - name: Setup Node 14.x
         uses: MM12300/portfolio-CICD/setup-node-main@main
