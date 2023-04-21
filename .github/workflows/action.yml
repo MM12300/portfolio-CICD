@@ -22,12 +22,12 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: MM12300/portfolio-CICD@master
+        uses: MM12300/portfolio-CICD@main
         with:
           action: checkout.yml
 
       - name: Setup Node 14.x
-        uses: MM12300/portfolio-CICD@master
+        uses: MM12300/portfolio-CICD@main
         with:
           action: setup-node.yml
           node-version: 14.x
