@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/MM12300/portfolio-CICD/issues"
   },
-  "homepage": "https://github.com/MM12300/portfolio-CICD#readme"
+  "homepage": "https://github.com/MM12300/portfolio-CICD#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.0"
+  }
 }
