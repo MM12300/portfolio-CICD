@@ -52,6 +52,11 @@ jobs:
         with:
           name: angular-tour-of-heroes-1
 
+#      - name: Azure Login
+#        uses: MM12300/portfolio-CICD/login-master@main
+#        with :
+#          creds: ${{ secrets.AZURE_CREDENTIALS}}
+
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
         uses: MM12300/portfolio-CICD/webapps-deploy-master@main
@@ -59,4 +64,4 @@ jobs:
           app-name: 'MMportfolio'
           slot-name: 'Production'
           publish-profile:  ${{ secrets.AzureAppService_PublishProfile_541fff7d309c4827b939c14e443b387e }}
-          package: .
+          package: dist/angular-tour-of-heroes
