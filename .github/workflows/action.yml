@@ -70,8 +70,6 @@ jobs:
           node-version: 14.x
           name: dist
           path:
-      - name : test
-        run : cd webapps-deploy-master && npm i
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
         uses: MM12300/portfolio-CICD/webapps-deploy-master@main
