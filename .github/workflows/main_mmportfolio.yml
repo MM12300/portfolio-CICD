@@ -26,11 +26,19 @@ jobs:
           npm install
           npm run build --if-present
 
+      - name : test ls
+        run : ls -lha
+
+      - name: test ls
+        run: ls -alh dist
+
       - name: Upload artifact for deployment job
         uses: MM12300/portfolio-CICD/upload-artifact-main@main
         with:
           name: angular-tour-of-heroes
           path: ./dist/angular-tour-of-heroes
+
+
 
   deploy:
     runs-on: ubuntu-latest
