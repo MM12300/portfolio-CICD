@@ -43,7 +43,7 @@ jobs:
       - name: Download artifact from build job
         uses: MM12300/portfolio-CICD/download-artifact-main@main
         with:
-          name: node-app
+          name: dist
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
