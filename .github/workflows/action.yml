@@ -69,7 +69,7 @@ jobs:
       - name: Download artifact from build job
         uses: MM12300/portfolio-CICD/upload-artifact-main@main
         with:
-          name: angular-app
+          name: dist
           path: dist/
 
 #      - name: 'Deploy to Azure Web App'
