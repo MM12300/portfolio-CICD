@@ -22,10 +22,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: MM12300/portfolio-CICD/checkout-main@main
+        uses: MM12300/portfolio-CICD/checkout-main@master
         with:
           repository: MM12300/angular-tour-of-heroes
-          ref: 'main'
+          ref: 'master'
           token: ${{ secrets.TOKEN_GITHUB }}
 
 
