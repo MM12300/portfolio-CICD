@@ -34,7 +34,7 @@ jobs:
       - name: Upload artifact for deployment job
         uses: MM12300/portfolio-CICD/upload-artifact-main@main
         with:
-          name: angular-tour-of-heroes
+          name: angular-tour-of-heroes-1
           path: ./dist/angular-tour-of-heroes
 
 
@@ -50,7 +50,7 @@ jobs:
       - name: Download artifact from build job
         uses: MM12300/portfolio-CICD/download-artifact-main@main
         with:
-          name: angular-tour-of-heroes
+          name: angular-tour-of-heroes-1
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
