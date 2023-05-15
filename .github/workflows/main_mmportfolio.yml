@@ -30,7 +30,7 @@ jobs:
         uses: MM12300/portfolio-CICD/upload-artifact-main@main
         with:
           name: node-app
-          path: .
+          path: ./dist
 
   deploy:
     runs-on: ubuntu-latest
