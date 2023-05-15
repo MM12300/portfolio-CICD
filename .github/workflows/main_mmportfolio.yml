@@ -52,10 +52,10 @@ jobs:
         with:
           name: angular-tour-of-heroes-1
 
-#      - name: Azure Login
-#        uses: MM12300/portfolio-CICD/login-master@main
-#        with :
-#          creds: ${{ secrets.AZURE_CREDENTIALS}}
+      - name: Azure Login
+        uses: MM12300/portfolio-CICD/login-master@main
+        with :
+          creds: ${{ secrets.AZURE_CREDENTIALS}}
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
