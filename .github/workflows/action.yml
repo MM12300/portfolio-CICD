@@ -65,7 +65,7 @@ jobs:
         run: npm install @actions/core
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
-        uses: MM12300/portfolio-CICD/webapps-deploy-master
+        uses: MM12300/portfolio-CICD/webapps-deploy-master@master
         with:
           action: action.yml
           app-name: 'mmportfolio'
