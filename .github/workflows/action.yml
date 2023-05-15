@@ -24,7 +24,6 @@ jobs:
       - name: Checkout
         uses: MM12300/portfolio-CICD/checkout-main@main
         with:
-          action: action.yml
           repository: MM12300/angular-tour-of-heroes
           ref: 'main'
           token: ${{ secrets.TOKEN_GITHUB }}
