@@ -66,6 +66,8 @@ jobs:
       - name: Download artifact
         uses: MM12300/portfolio-CICD/download-artifact-main@main
         with:
+          action: action.yml
+          node-version: 14.x
           name: dist
           path: dist
 
