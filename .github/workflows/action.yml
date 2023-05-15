@@ -69,7 +69,15 @@ jobs:
           action: action.yml
           node-version: 14.x
           name: dist
-          path: dist
+          path:
+      - name: 'Deploy to Azure Web App'
+        id: deploy-to-webapp
+        uses: MM12300/portfolio-CICD/webapps-deploy-master@main
+        with:
+          app-name: 'angular-tour-of-heroes'
+          slot-name: 'Production'
+          publish-profile: ${{ secrets.AZURE_PUBLISH_PROFILE}}
+          package: .
 
 
 #      # If index.js was different than expected, upload the expected version as an artifact
