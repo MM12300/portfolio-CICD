@@ -49,7 +49,7 @@ jobs:
             exit 1
           fi
         id: diff
-#
+
 #      # If index.js was different than expected, upload the expected version as an artifact
 #      - uses: MM12300/portfolio-CICD@main
 #        if: ${{ failure() && steps.diff.conclusion == 'failure' }}
@@ -57,3 +57,26 @@ jobs:
 #          action : upload-artifact.yml
 #          name: dist
 #          path: dist/
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: 'Production'
+      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+
+    steps:
+      - name: Download artifact from build job
+        uses: MM12300/portfolio-CICD/upload-artifact-main@main
+        with:
+          name: angular-app
+          path: dist/
+
+#      - name: 'Deploy to Azure Web App'
+#        id: deploy-to-webapp
+#        uses: Maxime-DO/actions_azure_webapps-deploy@v2
+#        with:
+#          app-name: 'MMportfolio'
+#          slot-name: 'Production'
+#          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B4A298A01C22454BBD7FE39FE0608DC5 }}
+#          package: .
