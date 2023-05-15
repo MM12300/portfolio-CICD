@@ -22,7 +22,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: MM12300/portfolio-CICD/checkout-main@master
+        uses: MM12300/portfolio-CICD/checkout-main@main
         with:
           repository: MM12300/angular-tour-of-heroes
           ref: 'master'
