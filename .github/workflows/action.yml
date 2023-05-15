@@ -40,6 +40,7 @@ jobs:
 
       - name: Rebuild the dist/ directory
         run: npm run build
+        working-directory: ./test
 #
       - name: Compare the expected and actual dist/ directories
         run: |
@@ -70,7 +71,7 @@ jobs:
         uses: MM12300/portfolio-CICD/upload-artifact-main@main
         with:
           name: dist
-          path: .
+          path: ./test
 
 #      - name: 'Deploy to Azure Web App'
 #        id: deploy-to-webapp
