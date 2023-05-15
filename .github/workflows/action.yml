@@ -40,7 +40,9 @@ jobs:
 
       - name: Rebuild the dist/ directory
         run: npm run build
-        working-directory: ./test
+
+      - name: run ls
+        run: ls -lha
 #
       - name: Compare the expected and actual dist/ directories
         run: |
