@@ -74,6 +74,7 @@ jobs:
         id: deploy-to-webapp
         uses: MM12300/portfolio-CICD/webapps-deploy-master@main
         with:
+          action: action.yml
           app-name: 'angular-tour-of-heroes'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZURE_PUBLISH_PROFILE}}
