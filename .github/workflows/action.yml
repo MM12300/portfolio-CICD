@@ -63,6 +63,12 @@ jobs:
         with:
           name: dist
           path: ./dist/angular-tour-of-heroes
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: dist
+          path: dist
+
 
 #      # If index.js was different than expected, upload the expected version as an artifact
 #      - uses: MM12300/portfolio-CICD@main
