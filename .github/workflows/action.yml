@@ -65,7 +65,7 @@ jobs:
         run: npm install @actions/core
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
-        uses: MM12300/portfolio-CICD/webapps-deploy-master@main
+        uses: MM12300/portfolio-CICD/webapps-deploy-master
         with:
           action: action.yml
           app-name: 'angular-tour-of-heroes'
