@@ -58,13 +58,13 @@ jobs:
 
       - name: run ls
         run: ls -lha
-      - name: Download artifact from build job
+      - name: Upload artifact from build job
         uses: MM12300/portfolio-CICD/upload-artifact-main@main
         with:
           name: dist
           path: ./dist/angular-tour-of-heroes
       - name: Download artifact
-        uses: actions/download-artifact@v2
+        uses: MM12300/portfolio-CICD/download-artifact-main@main
         with:
           name: dist
           path: dist
