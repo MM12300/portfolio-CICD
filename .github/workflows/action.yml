@@ -72,6 +72,8 @@ jobs:
 #      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
+      - name: run ls
+        run: ls -lha
       - name: Download artifact from build job
         uses: MM12300/portfolio-CICD/upload-artifact-main@main
         with:
