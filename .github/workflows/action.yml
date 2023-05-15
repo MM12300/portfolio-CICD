@@ -62,7 +62,7 @@ jobs:
         uses: MM12300/portfolio-CICD/upload-artifact-main@main
         with:
           name: dist
-        path: ./dist/angular-tour-of-heroes
+          path: ./dist/angular-tour-of-heroes
 
 #      # If index.js was different than expected, upload the expected version as an artifact
 #      - uses: MM12300/portfolio-CICD@main
