@@ -64,5 +64,5 @@ jobs:
           app-name: angular-tour-of-heroes-1
           slot-name: 'Production'
           publish-profile:  ${{ secrets.AzureAppService_PublishProfile_541fff7d309c4827b939c14e443b387e }}
-#          package: dist/angular-tour-of-heroes
-          package : .
+          package: dist/angular-tour-of-heroes
+#          package : .
