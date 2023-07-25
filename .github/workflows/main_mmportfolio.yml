@@ -25,8 +25,12 @@ jobs:
         uses: MM12300/portfolio-CICD/setup-node-main@main
         with:
           node-version: '14.x'
+          
+      - name : tests
+        run : 
+          npm test
 
-      - name: npm install, build, and test
+      - name: npm install & build
         run: |
           npm install
           npm run build --if-present
