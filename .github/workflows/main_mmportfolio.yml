@@ -58,12 +58,6 @@ jobs:
         with:
           name: angular-tour-of-heroes-1
 
-      - name : pwd
-        run : pwd
-
-      - name : ls
-        run : ls -alh
-
       - name: Azure Login
         uses: MM12300/portfolio-CICD/login-master@main
         with :
